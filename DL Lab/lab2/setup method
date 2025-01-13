@@ -1,0 +1,24 @@
+1. setup a virtual environment
+python -m venv myenv
+
+2. activate virtual env
+source venv/bin/activate
+
+3. install pytorch with cuda 12.1
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+4. setup pycharm
+    Open PyCharm.
+    Open your project or create a new one.
+    Go to File > Settings (Windows) or PyCharm > Preferences (Mac).
+    In the settings window, navigate to Project: [your project name] > Python Interpreter.
+    Click the gear icon and select Add.
+    In the dialog that appears, choose Existing environment and select the Python executable from the virtual environment:
+        For Windows, navigate to myenv\Scripts\python.exe.
+        For Mac/Linux, navigate to myenv/bin/python.
+    Click OK to save the changes and select the virtual environment as the interpreter.
+
+5. how to verify
+import torch
+print(torch.__version__)
+

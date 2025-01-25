@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Entry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Enter Marks for 4 Subjects</h1>
+    
+    <form id="marksForm">
+      <div class="mb-3">
+        <label for="subject1" class="form-label">Subject 1</label>
+        <input type="number" class="form-control" id="subject1" placeholder="Enter marks for Subject 1" required>
+      </div>
+      <div class="mb-3">
+        <label for="subject2" class="form-label">Subject 2</label>
+        <input type="number" class="form-control" id="subject2" placeholder="Enter marks for Subject 2" required>
+      </div>
+      <div class="mb-3">
+        <label for="subject3" class="form-label">Subject 3</label>
+        <input type="number" class="form-control" id="subject3" placeholder="Enter marks for Subject 3" required>
+      </div>
+      <div class="mb-3">
+        <label for="subject4" class="form-label">Subject 4</label>
+        <input type="number" class="form-control" id="subject4" placeholder="Enter marks for Subject 4" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    <div id="result" class="mt-4"></div>
+  </div>
+
+  <script src="index3.js"></script>
+</body>
+</html>
